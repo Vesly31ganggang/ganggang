@@ -1,0 +1,279 @@
+function formdrag1d5097()
+Menu.dragNow()
+end
+
+function hidemenu()
+if of==0 or of==nil then
+ls.SetActive(false)
+i.SetActive(false)
+i2.SetActive(false)
+f.SetActive(false)
+s.SetActive(false)
+n2.SetActive(false)
+n1.SetActive(false)
+
+ar.SetActive(false)
+l.SetActive(false)
+p.SetActive(false)
+r.SetActive(false)
+o.SetActive(false)
+
+emnx.SetActive(false)
+enmye.SetActive(false)
+enmz.SetActive(false)
+tpallflg.SetActive(false)
+myxpos.SetActive(false)
+myypos.SetActive(false)
+myzpos.SetActive(false)
+speedhack_setSpeed(1)
+abc.SetActive(false)
+abc1.SetActive(false)
+closeCE()
+of = 1
+end
+end
+
+--[[function skeep()
+if ske == nil or ske ==0 then
+skeep.SetActive(true)
+sleep(1000)
+skeep.SetActive(false)
+ske=1
+else
+skeep.SetActive(true)
+sleep(1000)
+skeep.SetActive(false)
+ske=0
+end
+end]]
+
+function hideopen()
+if hideop == nil or hideop == 0 then
+Menu.show()
+hideop = 1
+else
+Menu.hide()
+hideop = 0
+end
+end
+
+function tep()
+if j == nil or j ==0 then
+abc.SetActive(true)
+abc1.SetActive(true)
+abc.SetActive(true)
+abc1.SetActive(true)
+tpallflg.Value = 1
+enmye.Value = myypos.Value
+  emnx.Value = myxpos.Value
+  enmz.Value = myzpos.Value
+  j=1
+  else
+enmye.Value = myypos.Value
+  emnx.Value = myxpos.Value
+  enmz.Value = myzpos.Value
+tpallflg.Value = 0
+j=0
+end
+end
+
+--начало
+function Menu_tpobjClick(sender)
+if fa==0 or fa==nil then
+speedhack_setSpeed(5)
+sender.color = 0x004B026A
+fa = 1
+else
+fa=0
+speedhack_setSpeed(1)
+sender.color = 0x00BA25FA
+end
+end
+
+function Menu_NoclipClick(sender)
+if a==0 or a==nil then
+f.SetActive(true)
+sender.color = 0x004B026A
+a = 1
+else
+a=0
+f.SetActive(false)
+sender.color = 0x00BA25FA
+end
+end
+
+function Menu_speedhackClick(sender)
+if b==0 or b==nil then
+s.SetActive(true)
+sender.color = 0x004B026A
+b = 1
+else
+b=0
+s.SetActive(false)
+sender.color = 0x00BA25FA
+end
+end
+
+
+function Menu_nodelayClick(sender)
+if d==0 or d==nil then
+n1.SetActive(false)
+n2.SetActive(true)
+l.SetActive(false)
+p.SetActive(false)
+r.SetActive(false)
+o.SetActive(false)
+ar.SetActive(true)
+sender.color = 0x004B026A
+d = 1
+else
+d=0
+n2.SetActive(false)
+ar.SetActive(false)
+sender.color = 0x00BA25FA
+end
+end
+
+function Menu_TelekillClick(sender)
+if teghr == 0 or teghr == nil then
+abc.SetActive(true)
+abc1.SetActive(true)
+abc.SetActive(true)
+abc1.SetActive(true)
+tpallflg.Value = 1
+teghr = 1
+enmye.Value = myypos.Value
+  emnx.Value = myxpos.Value
+  enmz.Value = myzpos.Value
+sender.color = 0x004B026A
+else
+enmye.Value = myypos.Value
+  emnx.Value = myxpos.Value
+  enmz.Value = myzpos.Value
+sender.color = 0x00BA25FA
+tpallflg.Value = 0
+teghr = 0
+end
+end
+
+function Menu_nofogClick(sender)
+if c==0 or c==nil then
+ar.SetActive(false)
+l.SetActive(false)
+p.SetActive(false)
+r.SetActive(false)
+o.SetActive(false)
+
+n1.SetActive(true)
+n2.SetActive(true)
+sender.color = 0x004B026A
+c = 1
+else
+c=0
+n1.SetActive(false)
+n2.SetActive(false)
+sender.color = 0x00BA25FA
+end
+end
+
+function Menu_intradClick(sender)
+if e==0 or e==nil then
+n1.SetActive(false)
+n2.SetActive(true)
+ar.SetActive(false)
+p.SetActive(false)
+r.SetActive(false)
+o.SetActive(false)
+l.SetActive(true)
+sender.color = 0x004B026A
+e = 1
+else
+e=0
+n2.SetActive(false)
+l.SetActive(false)
+sender.color = 0x00BA25FA
+end
+end
+
+function Menu_NoknockClick(sender)
+if f==0 or f==nil then
+n2.SetActive(false)
+p.SetActive(false)
+sender.color = 0x00BA25FA
+f = 1
+else
+f=0
+n1.SetActive(false)
+n2.SetActive(true)
+l.SetActive(false)
+ar.SetActive(false)
+r.SetActive(false)
+o.SetActive(false)
+p.SetActive(true)
+sender.color = 0x004B026A
+end
+end
+
+function Menu_setTransformClick(sender)
+if j==0 or j==nil then
+n1.SetActive(false)
+n2.SetActive(true)
+l.SetActive(false)
+p.SetActive(false)
+ar.SetActive(false)
+o.SetActive(false)
+r.SetActive(true)
+sender.color = 0x004B026A
+j = 1
+else
+j=0
+n2.SetActive(false)
+r.SetActive(false)
+sender.color = 0x00BA25FA
+end
+end
+
+function Menu_setbindbtnClick(sender)
+if q==0 or q==nil then
+n1.SetActive(false)
+n2.SetActive(true)
+l.SetActive(false)
+p.SetActive(false)
+r.SetActive(false)
+ar.SetActive(false)
+o.SetActive(true)
+sender.color = 0x004B026A
+q = 1
+else
+q=0
+n2.SetActive(false)
+o.SetActive(false)
+sender.color = 0x00BA25FA
+end
+end
+
+function Menu_meledstClick(sender)
+if a==0 or a==nil then
+i2.SetActive(false)
+i.SetActive(true)
+sender.color = 0x004B026A
+a = 1
+else
+a=0
+i.SetActive(false)
+i2.SetActive(true)
+sender.color = 0x00BA25FA
+end
+end
+
+function Menu_WallhackClick(sender)
+if a==0 or a==nil then
+ls.SetActive(true)
+sender.color = 0x004B026A
+a = 1
+else
+a=0
+ls.SetActive(false)
+sender.color = 0x00BA25FA
+end
+end

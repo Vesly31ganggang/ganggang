@@ -1,0 +1,190 @@
+----loadstring(getInternet().getURL("https://raw.githubusercontent.com/Japrajah/musorka/main/testtesttest.lua"))()
+--loadstring(getInternet().getURL("https://raw.githubusercontent.com/Japrajah/musorka/main/dlcpavukmain.lua"))()11
+loadall.show()
+-- TEST loadstring(getInternet().getURL("https://raw.githubusercontent.com/Japrajah/musorka/main/testlolkek.lua"))()
+--loadstring(getInternet().getURL("hhttps://raw.githubusercontent.com/Japrajah/musorka/main/devversion.lua"))()
+
+ loadall.CEButton1.Visible = true
+ loadall.CEButton1.Enabled = true
+ loadall.CEEdit1.Visible = false
+ -- ESLI NE 1 TO ZAKRIVAET VSE    zakritnnadovse = 1
+  -- MAIN
+
+
+function closeifgameclosed()
+local vlada4 = getProcessIDFromProcessName("Deceit.exe")
+if vlada4 == 0 or vlada4 == nil then
+clsehuetu.Enabled = false
+closeCE()
+
+end
+
+end
+
+alist = getAddressList()
+function loadsripts()
+
+keycheck=createTimer()
+keycheck.Interval = 50
+keycheck.OnTimer = checkKeys
+keycheck.Enabled = false
+
+fast = alist.getMemoryRecordByDescription('acceleration')
+skeep = alist.getMemoryRecordByDescription('Skip')
+ls1 = alist.getMemoryRecordByDescription('lsd1')
+ls2 = alist.getMemoryRecordByDescription('lsd2')
+ls3 = alist.getMemoryRecordByDescription('lsd3')
+i = alist.getMemoryRecordByDescription('getinteractionradiusf')
+i2 = alist.getMemoryRecordByDescription('getinteractionradiusf2')
+f = alist.getMemoryRecordByDescription('nodelaytestHH')
+s = alist.getMemoryRecordByDescription('speed')
+n2 = alist.getMemoryRecordByDescription('prohod sten')
+n1 = alist.getMemoryRecordByDescription('polet')
+
+ar = alist.getMemoryRecordByDescription('Arctic')
+l = alist.getMemoryRecordByDescription('forest')
+p = alist.getMemoryRecordByDescription('sawmill')
+r = alist.getMemoryRecordByDescription('mental hospital')
+o = alist.getMemoryRecordByDescription('mansion')
+
+abc = alist.getMemoryRecordByDescription('test tpall')
+abc1 = alist.getMemoryRecordByDescription('speedhackTEST')
+abc.SetActive(true)
+abc1.SetActive(true)
+
+    emnx = alist.getMemoryRecordByDescription('xtpallF')
+    enmye = alist.getMemoryRecordByDescription('ytpallFn')
+    enmz = alist.getMemoryRecordByDescription('ztpallF')
+    tpallflg = alist.getMemoryRecordByDescription('On/Offtp')
+  myxpos = alist.getMemoryRecordByDescription('xreserv')
+  myypos = alist.getMemoryRecordByDescription('yreverv')
+  myzpos = alist.getMemoryRecordByDescription('zreserv')
+
+----
+--[[SCRtpobje = alist.getMemoryRecordByDescription('testtpitems')
+  SCRtpobje.setActive(true)
+
+    objx = alist.getMemoryRecordByDescription('xpozitems')
+    objy = alist.getMemoryRecordByDescription('ypozitems')
+    objz = alist.getMemoryRecordByDescription('zpozitems')
+    tpobjfg = alist.getMemoryRecordByDescription('flagkekw')
+
+
+
+
+----
+SCRdisfog = alist.getMemoryRecordByDescription('Tumandada')
+SCRdisfog.setActive(true)
+disfog = alist.getMemoryRecordByDescription('onoff fog')
+-----
+
+noknock = alist.getMemoryRecordByDescription('noknockFF')
+-------
+SCRtransform = alist.getMemoryRecordByDescription('My Cdp main')
+ SCRtransform.setActive(true)
+  dotransform = alist.getMemoryRecordByDescription('Transformed')
+-------
+SCRspeedhack = alist.getMemoryRecordByDescription('speedhackTEST') -- broken
+SCRspeedhack.setActive(true)
+speedhack = alist.getMemoryRecordByDescription('speedpowertst')
+------
+SCRtelekill = alist.getMemoryRecordByDescription('test tpall')
+  SCRtelekill.setActive(true)
+
+    emnx = alist.getMemoryRecordByDescription('xtpallF')
+    enmye = alist.getMemoryRecordByDescription('ytpallFn')
+    enmz = alist.getMemoryRecordByDescription('ztpallF')
+    tpallflg = alist.getMemoryRecordByDescription('On/Offtp')
+--------
+getpos = alist.getMemoryRecordByDescription('GetMyPos')
+getpos.setActive(true)
+  myxpos = alist.getMemoryRecordByDescription('xmypos')
+  myypos = alist.getMemoryRecordByDescription('ymypos')
+  myzpos = alist.getMemoryRecordByDescription('zmypos')
+   noclipsedd = alist.getMemoryRecordByDescription('coliderBB')
+  -----
+stamuna = alist.getMemoryRecordByDescription('infnitystamin')
+---------
+ivners = alist.getMemoryRecordByDescription('inventorysc')
+ivners.setActive(true)
+ noclipsedd = alist.getMemoryRecordByDescription('coliderBB')
+-----------
+SCRwh = alist.getMemoryRecordByDescription('glowPlayers')
+SCRwh.setActive(true)
+colorleg = alist.getMemoryRecordByDescription('LeGIt color')
+alphab = alist.getMemoryRecordByDescription('alpha_borders')
+alphain = alist.getMemoryRecordByDescription('alpha__inside')
+ whonoff = alist.getMemoryRecordByDescription('wh/onoff')
+
+------------
+SCRmeledst = alist.getMemoryRecordByDescription('meledistaneceSs')
+SCRmeledst.setActive(true)
+    meledst = alist.getMemoryRecordByDescription('distancedada')
+
+
+-----------
+
+
+--no delay
+antdelay = alist.getMemoryRecordByDescription('nodelaytestHH')
+-------
+--NIGHT LETAL
+SCRnleathal = alist.getMemoryRecordByDescription('letal_nightDA')
+SCRnleathal.setActive(true)
+nleathal = alist.getMemoryRecordByDescription('nletalOFON')
+
+-----
+--SCRintrad = alist.getMemoryRecordByDescription('getinteractionradius')
+--SCRintrad.setActive(false)
+  --  intrad = alist.getMemoryRecordByDescription('inRadius')
+---
+SCRtvoteunlock = alist.getMemoryRecordByDescription('useles unlockmovment at vote')
+SCRtvoteunlock.setActive(true)
+tvoteunlock = alist.getMemoryRecordByDescription('unlockmovmente')
+--- invclean  beta
+
+--SCRmaininvptree = alist.getMemoryRecordByDescription('getmaininvptreeZ')
+--SCRmaininvptree.setActive(true)
+i5slot = alist.getMemoryRecordByDescription('SLOT5f')
+i4slot = alist.getMemoryRecordByDescription('SLOT4f')
+i3slot = alist.getMemoryRecordByDescription('SLOT3f')
+i2slot = alist.getMemoryRecordByDescription('SLOT2f')
+i1slot = alist.getMemoryRecordByDescription('SLOT1f')]]
+end
+function activate()
+ if loadall.CEButton1.Enabled == true then
+--[[
+if zakritnnadovse ~= 1 then
+closeCE()
+end
+]]
+if loadsucecced == nil then
+openProcess("Deceit.exe")
+Menu.show()
+loadall.hide()
+CETrainer.hide()
+hideop = 1
+alist = getAddressList()
+noclipse = alist.getMemoryRecordByDescription('coliderBB')
+openmenu = createHotkey(hideopen,VK_END)
+op = createHotkey(tep,VK_G)
+sk = createHotkey(skeep,VK_X)
+--openmenu.destroy()
+loadsripts()
+ingmetimer=createTimer()
+ingmetimer.Interval = 5000
+ingmetimer.OnTimer = InMatch
+ingmetimer.Enabled = false
+clsehuetu = createTimer()
+clsehuetu.Interval = 5000
+clsehuetu.OnTimer = closeifgameclosed
+clsehuetu.Enabled = true
+loadsucecced = 1
+--temphotkey = createHotkey(nooclipe,VK_N) -- UDALIT NADO BUDET
+loadall.hide()
+
+end
+
+end
+
+end
